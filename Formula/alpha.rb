@@ -9,17 +9,17 @@ class Alpha < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/patr-cloud/patr/releases/download/alpha/patr-darwin-arm64.zip"
-      sha256 "71a3389c3070d2fdba2cfa4cd4034ff436e7f719ddbeab165254a0c71188978c"
+      sha256 "174fd34a75ca537de8fdbc8601351601f4f14eae26e69273c158ffa7110a091a"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/patr-cloud/patr/releases/download/alpha/patr-linux-arm64.tar.gz"
-      sha256 "0ca951f8396ffa0d23bcc82746f77519c9121d83161a85fc9c92dcf7eab1f67d"
+      sha256 "ac859f2e99e92e9ce9bf1314cdf704c7b5c9bb1f819b912e6003de1270a80362"
     else
       url "https://github.com/patr-cloud/patr/releases/download/alpha/patr-linux-amd64.tar.gz"
-      sha256 "9aa7e42672ffc3baf6444044e28cb9708ebdb05181047e2da90ad3cf9ee8ee78"
+      sha256 "b06178f13df582154995b0bd2fb252970de77919f09217beb4d5e68de34e1cdb"
     end
   end
 
