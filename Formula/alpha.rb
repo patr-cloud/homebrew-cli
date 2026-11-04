@@ -1,7 +1,7 @@
 class Alpha < Formula
   desc "CLI tool for managing Patr cloud resources"
   homepage "https://github.com/patr-cloud/patr"
-  version "0.18.0-alpha.199"
+  version "0.18.0-alpha.200"
 
   conflicts_with "cli", because: "both install the patr binary"
   conflicts_with "beta", because: "both install the patr binary"
@@ -11,17 +11,17 @@ class Alpha < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/patr-cloud/patr/releases/download/alpha/patr-darwin-arm64-brew.zip"
-      sha256 "9ef54fd96d664f877e075cebc0e8eeced7172912bc6c47b6c0f993685ef9b22a"
+      sha256 "039acd9dc4bf3de4c691e67999fa23690051182144638e43d76b1e4c44d95b49"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/patr-cloud/patr/releases/download/alpha/patr-linux-arm64-brew.tar.gz"
-      sha256 "b4858a92c9eb1297eec96c6f0a1e2d9a65f5b84739ad93e323e5b38c70d3bb56"
+      sha256 "c80dd4a2a783cacf8045bbaf2da7c85f32b3e2dd9d46daa01df2117522880bcf"
     else
       url "https://github.com/patr-cloud/patr/releases/download/alpha/patr-linux-amd64-brew.tar.gz"
-      sha256 "0c778ffa4b2ca5eff2070eec14f2bab12e6c02f16993d019aa1390d36add9fe1"
+      sha256 "e709d29ab611bbbceba847e2805e01a2f098e998c20168c1e5406bb2b19e51d5"
     end
   end
 
